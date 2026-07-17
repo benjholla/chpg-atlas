@@ -26,7 +26,7 @@
         </repository>
         <repository>
             <id>ensoft-atlas</id>
-            <url>https://www.ensoftupdate.com/download/atlas/eclipse</url>
+            <url>https://ensoftcorp.com/downloads/atlas/eclipse</url>
             <layout>p2</layout>
         </repository>
     </repositories>
