@@ -1,4 +1,6 @@
 # chpg-atlas
+[![Build Plugin](https://github.com/benjholla/chpg-atlas/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/benjholla/chpg-atlas/actions/workflows/build.yml)
+
 CHPG support for Atlas
 
 ## Building the Plugin
