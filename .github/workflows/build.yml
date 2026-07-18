@@ -25,3 +25,12 @@ jobs:
 
     - name: Build with Maven
       run: mvn clean verify
+
+    - name: Deploy Update Site to GitHub Pages
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./chpg.atlas.site/target/repository
+        publish_branch: preview
+        keep_files: false
