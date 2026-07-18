@@ -16,6 +16,8 @@
     <modules>
         <module>dev.chpg.pg.exporter</module>
         <module>chpg.atlas</module>
+        <module>chpg.atlas.feature</module>
+        <module>chpg.atlas.site</module>
     </modules>
 
     <repositories>

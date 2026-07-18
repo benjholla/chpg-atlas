@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>chpg.atlas</groupId>
+    <artifactId>chpg.atlas.parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>chpg.atlas.site</artifactId>
+  <packaging>eclipse-repository</packaging>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <id>generate-composite-repository</id>
+            <phase>package</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <property name="repo_dir" value="${project.build.directory}/repository" />
+                <property name="timestamp" value="${maven.build.timestamp}" />
+
+                <echo file="${repo_dir}/compositeArtifacts.xml"><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
+<?compositeArtifactRepository version='1.0.0'?>
+<repository name='CHPG Atlas Update Site' type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='${timestamp}'/>
+  </properties>
+  <children size='2'>
+    <child location='http://ensoftupdate.com/download/atlas/current'/>
+    <child location='.'/>
+  </children>
+</repository>
+]]></echo>
+
+                <echo file="${repo_dir}/compositeContent.xml"><![CDATA[<?xml version='1.0' encoding='UTF-8'?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name='CHPG Atlas Update Site' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='${timestamp}'/>
+  </properties>
+  <children size='2'>
+    <child location='http://ensoftupdate.com/download/atlas/current'/>
+    <child location='.'/>
+  </children>
+</repository>
+]]></echo>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
