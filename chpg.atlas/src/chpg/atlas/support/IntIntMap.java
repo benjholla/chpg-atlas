@@ -29,6 +29,13 @@ public class IntIntMap {
      * @param expectedSize The maximum number of entries (nodes) this map will hold.
      */
     public IntIntMap(int expectedSize) {
+        if (expectedSize < 0) {
+            throw new IllegalArgumentException("expectedSize cannot be negative: " + expectedSize);
+        }
+        if (expectedSize > (1 << 29)) {
+            throw new IllegalArgumentException("expectedSize is too large: " + expectedSize);
+        }
+
         // Find the next power of 2 that guarantees at least a 0.5 load factor.
         // A load factor of <= 0.5 is critical to prevent linear probing performance degradation.
         int targetCapacity = Math.max(2, expectedSize * 2);
