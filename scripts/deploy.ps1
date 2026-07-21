@@ -27,7 +27,7 @@ $REMOTE_URL = (git remote get-url origin).Trim()
 
 Write-Host "Deploying to preview branch..."
 # Navigate to the built update site directory
-Set-Location -Path "chpg.atlas.site/target/repository"
+Set-Location -Path "dev.chpg.pg.atlas.site/target/repository"
 
 # Initialize a new git repository
 Invoke-CommandOrThrow { git init }

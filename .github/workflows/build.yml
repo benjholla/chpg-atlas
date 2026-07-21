@@ -33,6 +33,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./chpg.atlas.site/target/repository
+        publish_dir: ./dev.chpg.pg.atlas.site/target/repository
         publish_branch: preview
         force_orphan: true

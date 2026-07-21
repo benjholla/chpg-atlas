@@ -1,4 +1,4 @@
-package chpg.atlas.support;
+package dev.chpg.pg.atlas.support;
 
 public class GraphConversion {
 	

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/dev.chpg.pg.atlas.feature_1.0.0.qualifier.jar" id="dev.chpg.pg.atlas.feature" version="1.0.0.qualifier">
+      <category name="dev.chpg.pg.atlas"/>
+   </feature>
+   <category-def name="dev.chpg.pg.atlas" label="CHPG Atlas">
+      <description>
+         CHPG Atlas Components
+      </description>
+   </category-def>
+</site>

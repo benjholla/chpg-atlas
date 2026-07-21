@@ -1,4 +1,4 @@
-package chpg.atlas.support;
+package dev.chpg.pg.atlas.support;
 
 import java.io.File;
 import java.util.HashMap;
