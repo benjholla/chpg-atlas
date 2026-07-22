@@ -1,5 +1,5 @@
-# chpg-atlas
-[![Build Plugin](https://github.com/benjholla/chpg-atlas/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/benjholla/chpg-atlas/actions/workflows/build.yml)
+# dev-chpg-pg-atlas
+[![Build Plugin](https://github.com/benjholla/dev-chpg-pg-atlas/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/benjholla/dev-chpg-pg-atlas/actions/workflows/build.yml)
 
 CHPG support for Atlas
 
@@ -13,7 +13,7 @@ To install the latest preview build generated from the `main` branch, you can us
 
 1. In Eclipse, open the `Help` menu and select `Install New Software...`.
 2. Click the `Add...` button near the top right of the dialog.
-3. Provide a name for the repository (e.g., "CHPG Atlas Preview") and enter the following Location: `https://ben-holland.com/chpg-atlas/`
+3. Provide a name for the repository (e.g., "CHPG Atlas Preview") and enter the following Location: `https://ben-holland.com/dev-chpg-pg-atlas/`
 4. Click `Add`.
 5. Select the plugin from the list, click `Next`, and follow the prompts to complete the installation.
 6. Restart Eclipse when prompted.
@@ -24,7 +24,7 @@ If you prefer to build and install from source locally:
 
 1. In Eclipse, open the `Help` menu and select `Install New Software...`.
 2. Click the `Add...` button near the top right of the dialog.
-3. Click the `Local...` button and select the `chpg.atlas.site/target/repository/` directory from this repository.
+3. Click the `Local...` button and select the `dev.chpg.pg.atlas.site/target/repository/` directory from this repository.
 4. Provide a name for the repository (e.g., "CHPG Atlas Local Update Site") and click `Add`.
 5. Select the plugin from the list, click `Next`, and follow the prompts to complete the installation.
 6. Restart Eclipse when prompted.
@@ -43,4 +43,4 @@ This repository uses a Maven Tycho headless build system to build the Eclipse pl
    mvn clean verify
    ```
 
-   *Note: This process will automatically build the required `pg-exporter.jar` from the submodule using Gradle and wrap it into an OSGi bundle before building `chpg.atlas`, the feature, and the update site repository.*
+   *Note: This process will automatically build the required `pg-exporter.jar` from the submodule using Gradle and wrap it into an OSGi bundle before building `dev.chpg.pg.atlas`, the feature, and the update site repository.*

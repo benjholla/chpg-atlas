@@ -16,7 +16,7 @@ REMOTE_URL=$(git remote get-url origin)
 
 echo "Deploying to preview branch..."
 # Navigate to the built update site directory
-cd chpg.atlas.site/target/repository
+cd dev.chpg.pg.atlas.site/target/repository
 
 # Initialize a new git repository
 git init

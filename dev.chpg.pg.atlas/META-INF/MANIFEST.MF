@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Atlas CHPG Utilities
-Bundle-SymbolicName: chpg.atlas;singleton:=true
+Bundle-SymbolicName: dev.chpg.pg.atlas;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: chpg.atlas.Activator
+Bundle-Activator: dev.chpg.pg.atlas.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.core.resources,
@@ -22,4 +22,4 @@ Require-Bundle: org.eclipse.ui,
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-ActivationPolicy: lazy
 Bundle-Vendor: Ben Holland
-Automatic-Module-Name: chpg.atlas
+Automatic-Module-Name: dev.chpg.pg.atlas

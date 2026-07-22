@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>chpg.atlas</groupId>
-    <artifactId>chpg.atlas.parent</artifactId>
+    <groupId>dev.chpg.pg.atlas</groupId>
+    <artifactId>dev.chpg.pg.atlas.parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>chpg.atlas.feature</artifactId>
-  <packaging>eclipse-feature</packaging>
+  <artifactId>dev.chpg.pg.atlas</artifactId>
+  <packaging>eclipse-plugin</packaging>
 </project>

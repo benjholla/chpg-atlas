@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="chpg.atlas.feature"
+      id="dev.chpg.pg.atlas.feature"
       label="CHPG Atlas Feature"
       version="1.0.0.qualifier">
 
@@ -24,7 +24,7 @@
          unpack="false"/>
 
    <plugin
-         id="chpg.atlas"
+         id="dev.chpg.pg.atlas"
          download-size="0"
          install-size="0"
          version="0.0.0"

@@ -3,8 +3,8 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>chpg.atlas</groupId>
-    <artifactId>chpg.atlas.parent</artifactId>
+    <groupId>dev.chpg.pg.atlas</groupId>
+    <artifactId>dev.chpg.pg.atlas.parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -15,9 +15,9 @@
 
     <modules>
         <module>dev.chpg.pg.exporter</module>
-        <module>chpg.atlas</module>
-        <module>chpg.atlas.feature</module>
-        <module>chpg.atlas.site</module>
+        <module>dev.chpg.pg.atlas</module>
+        <module>dev.chpg.pg.atlas.feature</module>
+        <module>dev.chpg.pg.atlas.site</module>
     </modules>
 
     <repositories>
